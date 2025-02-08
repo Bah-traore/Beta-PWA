@@ -100,5 +100,77 @@ Pour installer une extension sur VS Code :
 
 ---
 
+
+
+# 1.Utilisation Git
+## initialiser un depot git (si ce n'est pas deja fait)
+```sh
+git init
+```
+Ceci montrera que vous allez initié votre compte github à votre vs code 
+```sh
+git --global user.email "adresse email github" 
+git --global user.name "votre nom ou votre nom d'utilisateur"
+```
+## 2.Vérifier l'état du fichier 
+```sh 
+git status 
+```
+ceci permet àvoir l'état de ton fichier ou de dossier 
+## 3.Ajouter un fichier 
+```sh
+git add nom du fichier 
+```
+celui la permet d'ajouter un fichier spécifique 
+## 4.Ajouter plusieurs fichiers 
+```sh
+git add .
+```
+celui la permet d'ajouter plusieurs fichiers dans le repertoire courant 
+## 5. Enrengistrer les commit (enrengistre les modifications dans historiques)
+```sh
+git commit -m "Votre de message de commit 
+c'est comme un commentaire de la raison d'enregistrement"
+```
+votre message est essentiel pour la comprehension des collaborateurs
+## 6. voir l'historique des commits
+```sh
+git log
+```
+Permet de voir l'historique
+## 6. Pousser les commit vers le depot (si vous avez un depot distant)
+```sh
+git push origin nom_de_la_branche
+```
+Remplacez *nom_de_la_branche* par le nom de la branche sur laquelle vous traillez.
+Pour nous c'est *main* exemple: *git push origin main*
+### 1. Configurer un depot distant (si n'est pas deja fait)
+```sh
+git remote add origin URL_du_depot
+```
+ Remplacez *URL_du_depot* par l'URL de votre dépôt Git distant (par exemple, sur GitHub).
+## 7. Récupérer les modifications du dépôt distant :
+   ```sh
+   git pull origin nom_de_la_branche
+   ```
+## 8. Créer une nouvelle branche :
+```sh
+git checkout -b nom_de_la_nouvelle_branche
+```
+## 9. Fusionner une branche :
+```sh
+git merge nom_de_la_branche_a_fusionner
+```
+## 10. Annuler un commit local (avant de pousser) :
+```sh
+git reset HEAD~1
+```
+## 11. Annuler un commit déjà poussé :
+```sh
+git revert commit_hash
+```
+Remplacez *commit_hash* par l'identifiant du commit que vous souhaitez annuler.
+
+
 ## Conclusion
-Avec ces outils et dépendances installés, vous êtes prêt à commencer le développement avec un environnement moderne et optimisé ! 🚀
+Avec ces outils et dépendances installés, vous êtes prêt à commencer le développement avec un environnement moderne et optimisé !GEEK-FIRE 🚀
