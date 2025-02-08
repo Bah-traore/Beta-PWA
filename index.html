@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script defer src="./dist/js/script.js"></script>
+    <title>Acceuil</title>
+</head>
+<body>
+    <nav class="bg-stone-200 dark:bg-gray-900 shadow-lg py-2">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <!-- Logo -->
+                    <div>
+                        <a href="#" class="flex items-center py-4 px-2">
+                            <img class="size-8 pb-2" src="./images/logo/home.svg" alt="">
+                            <span class="font-semibold text-gray-500 text-lg">Acceuil</span>
+                        </a>
+                    </div>
+                    <!-- Menu principal -->
+                    <div class="hidden sm:flex gap-4 justify-content-center">
+                        <a href="./" class="py-4 px-2 text-gray-500 font-semibold hover:bg-green-500 rounded-lg transition duration-300">Acceuil</a>
+                        <a href="./" class="py-4 px-2 text-gray-500 font-semibold hover:bg-green-500 rounded-lg transition duration-300">Menu</a>
+                        <a href="#" class="py-4 px-2 text-gray-500 font-semibold hover:bg-green-500 rounded-lg transition duration-300">Contact</a>
+                        <a href="#" class="py-4 px-2 text-gray-500 font-semibold hover:bg-green-500 rounded-lg transition duration-300">Apropos</a>
+                    </div>
+                </div>
+                <!-- Bouton mobile -->
+                <div class="sm:hidden flex items-center">
+                    <button class="outline-none  mobile-menu-button">
+                        <svg class="croix w-6 h-6 text-gray-600 hover:text-green-500"
+                            x-show="!showMenu"
+                            fill="none"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path d="M4 6h18M4 12h8M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Menu mobile -->
+        <div class="hidden bg-sky-700 mobile-menu">
+            <ul class="">
+                <li><a href="./index.html" class="block text-sm px-2 py-4 hover:bg-green-500 rounded-l-lg font-semibold">Acceuil</a></li>
+                <li><a href="./index.html" class="block text-sm px-2 py-4 hover:bg-green-500 rounded-l-lg font-semibold">Menu</a></li>
+                <li><a href="#" class="block text-sm px-2 py-4 hover:bg-green-500 transition rounded-l-lg duration-300">Contact</a></li>
+                <li><a href="#" class="block text-sm px-2 py-4 hover:bg-green-500 transition rounded-l-lg duration-300">Apropos</a></li>
+            </ul>
+        </div>
+    </nav>
+</body>
+</html>
